@@ -2,10 +2,10 @@
 #include <string.h>
 
 
-void AND(char bin1[8], char bin2[8])
+void AND(char bin1[9], char bin2[9])
 {
   int i;
-  char eq[8];
+  char eq[9];
   for (i = 0; i < 8; i++) printf("%c", bin1[i]);
   printf(" AND ");
   for (i = 0; i < 8; i++) printf("%c", bin2[i]);
@@ -19,9 +19,9 @@ void AND(char bin1[8], char bin2[8])
 }
 
 
-void NAND(char bin1[8], char bin2[8])
+void NAND(char bin1[9], char bin2[9])
 {
-  int i, eq[8];
+  int i, eq[9];
   for (i = 0; i < 8; i++) printf("%c", bin1[i]);
   printf(" NAND ");
   for (i = 0; i < 8; i++) printf("%c", bin2[i]);
@@ -36,10 +36,10 @@ void NAND(char bin1[8], char bin2[8])
 }
 
 
-void OR(char bin1[8], char bin2[8])
+void OR(char bin1[9], char bin2[9])
 {
   int i;
-  char eq[8];
+  char eq[9];
   for (i = 0; i < 8; i++) printf("%c", bin1[i]);
   printf(" OR ");
   for (i = 0; i < 8; i++) printf("%c", bin2[i]);
@@ -53,9 +53,9 @@ void OR(char bin1[8], char bin2[8])
 }
 
 
-void NOR(char bin1[8], char bin2[8])
+void NOR(char bin1[9], char bin2[9])
 {
-  int i, eq[8];
+  int i, eq[9];
   for (i = 0; i < 8; i++) printf("%c", bin1[i]);
   printf(" NOR ");
   for (i = 0; i < 8; i++) printf("%c", bin2[i]);
@@ -69,10 +69,10 @@ void NOR(char bin1[8], char bin2[8])
   printf("\n");
 }
 
-void XOR(char bin1[8], char bin2[8])
+void XOR(char bin1[9], char bin2[9])
 {
   int i;
-  int eq[8];
+  int eq[9];
   for (i = 0; i < 8; i++) printf("%c", bin1[i]);
   printf(" XOR ");
   for (i = 0; i < 8; i++) printf("%c", bin2[i]);
@@ -86,9 +86,9 @@ void XOR(char bin1[8], char bin2[8])
 }
 
 
-void NOT(char bin[8])
+void NOT(char bin[9])
 {
-  int i, eq[8];
+  int i, eq[9];
   printf("NOT ");
   for (i = 0; i < 8; i++) printf("%c", bin[i]);
   printf(" = ");
@@ -104,7 +104,7 @@ void NOT(char bin[8])
 
 int main()
 {
-  char slowo[8], bin1[8], bin2[8], sen[4];
+  char slowo[9], bin1[9], bin2[9], sen[5];
   int i = 0;
 
   FILE *f = fopen("dane.txt", "r");
