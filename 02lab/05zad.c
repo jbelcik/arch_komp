@@ -6,7 +6,7 @@ int main()
 
   scanf("%f", &x);
 
-  int a = (int)(x*100), lewa = a/100, prawa, i, pom, j = 0, k = 0;
+  int a = (int)(x*100), lewa = a/100, prawa, i, pom, j = 0, k = 0, stop = 0;
   if (x < 0)
   {
     lewa = -lewa;
@@ -32,7 +32,15 @@ int main()
   }
 
   if (x < 0) putchar('-');
-  for (i = 0; i < j; i++) putchar(L[i]);
+  for (i = 0; i < j; i++)
+  {
+    if (L[i] != '0' || stop == 1)
+    {
+    putchar(L[i]);
+    stop = 1;
+    }
+  }
+  if (stop == 0) putchar('0');
   putchar('.');
   for (i = 0; i < k; i++) putchar(P[i]);
   putchar('\n');
